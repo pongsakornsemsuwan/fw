@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  flyway:
+    build: .
+    volumes:
+      - ./sql:/flyway/sql
+      - ./conf:/flyway/conf

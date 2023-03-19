@@ -1,1 +1,1 @@
-INSERT INTO my_table (DEFAULT, 'sample data');
+INSERT INTO promotion (id, name) values (DEFAULT, 'sample promotion2');

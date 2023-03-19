@@ -1,5 +1,6 @@
-CREATE TABLE my_table (
-    id UUID NOT NULL DEFAULT uuid_generate_v4() , 
-    MyColumn VARCHAR(100) NOT NULL
-    CONSTRAINT pkey_my_table PRIMARY KEY ( id )
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+CREATE TABLE promotion (
+    id UUID NOT NULL PRIMARY KEY DEFAULT uuid_generate_v4() , 
+    name VARCHAR(100) NOT NULL
 );
